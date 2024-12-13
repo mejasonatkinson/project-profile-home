@@ -1,3 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    /* Light Mode Colors */
+    --color-off-white: #F5F5F5;
+    --color-off-black: #141414;
+    --color-yellow: #FFDF00;
+    --color-red: #FF0000;
+    --color-teal: #008080;
+  
+    /* Dark Mode Colors */
+    --color-dark-off-white: #D3D3D3;
+    --color-dark-off-black: #1E1E1E;
+    --color-dark-yellow: #DAA520;
+    --color-dark-red: #DC143C;
+    --color-dark-teal: #006666;
+
+      /* Font Families */
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Montserrat', sans-serif;
+    --font-accent: 'Playfair Display', serif;
+
+    /* Font Weights */
+    --font-weight-regular: 400;
+    --font-weight-light: 300;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 800;
+  }
+
+body {
+  background-color: var(--color-off-white);
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-regular);
+}
+
+h1, h2 {
+  font-family: var(--font-secondary);
+  font-weight: var(--font-weight-bold);
+}
+
+h3, h4, h5, h6 {
+  font-family: var(--font-secondary);
+  font-weight: var(--font-weight-medium);
+}
+
+p, a {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-regular);
+}
+
+.light-text {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-light);
+}
+
+.medium-text {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-medium);
+}
+
+blockquote, .special-text {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-weight: var(--font-weight-regular);
+}
+
+.bold-accent {
+  font-family: var(--font-accent);
+  font-weight: var(--font-weight-bold);
+}
+
+.highlight {
+  font-family: var(--font-secondary);
+  font-weight: var(--font-weight-bold);
+}
